@@ -1,8 +1,7 @@
+import {Name} from './Person.types'
+
 type namelist = {
-    name:{
-        first:string
-        last:string
-    }[]
+    names: Name[]
 }
 
 
@@ -10,11 +9,11 @@ export const PersonList = (props:namelist) =>{
     return(
         <div>
             {
-                props.name.map(names => {
+                props.names.map(name => {
                     return(
                         <div>
-                            <h2>{names.first}</h2>
-                            <h2>{names.last}</h2>
+                            <h2>{name.first}</h2>
+                            <h2>{name.last}</h2>
                         </div>
                         
                     )

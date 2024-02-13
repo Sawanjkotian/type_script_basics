@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       <Greet name="Sesappa" messageCount={15} isLoggedIn={false} />
       <Person name={personName} />
-      <PersonList name={nameList} />
+      <PersonList names={nameList} />
       <Status status="error" />
       <Heading>Hi there I am a children prop</Heading>
       <Oscar>
